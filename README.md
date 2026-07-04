@@ -56,8 +56,44 @@ Python has the following arithematic operators:
 - '*' --> Multiplication
 - '/' --> Division
 
+For Example: 
 
-    
+        score1 = 0  # Score is 0
+        score2 = 4 + 3  # Score is 7
+        score3 = 5 - 2  # Score is 3
+        score4 = 5 * 2  # Score is 10
+        Score5 = 4/2  # Score is 2
+
+**This code calculates a 20% tip by calculating the total and then multiplying bya float(decimal number):**
+
+        Pizza = 2.99
+        coke = 1.77
+
+        total = pizza + coke
+
+        tip = total * 0.2
+
+        print(tip)
+*Another way to write this using paraentheses to calculate the total and the tip in one line:*
+tip = (coke + pizza) * 0.2
+
+In python, *Parentheses* ahve the highest order just like ***PEMDAS***
+
+**Question1:**
+
+*Create a temperature.py progarmme that converts a number from Farenheit to Celcius
+
+Use the following formula and write it in python:
+
+**celcius = (farenheit - 32)/1.8**
+
+Answer: 
+
+        Farenheit = int(input("Enter the Temperature in Farenheit"))
+        farenheit_to_celcius = (Farenheit - 32)/ 1.8
+        
+        print(f'The Converted Temperature from ferenheit to celcius is: {farenheit_to_celcius}')
+        
 
 
     
