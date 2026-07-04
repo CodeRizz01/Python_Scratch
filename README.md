@@ -51,10 +51,10 @@ For example:
 
 # Operators: 
 Python has the following arithematic operators:
-- + --> Addition
-- - --> Subtraction
-- * --> Multiplication
-- / --> Division
+- '+' --> Addition
+- '-' --> Subtraction
+- '*' --> Multiplication
+- '/' --> Division
 
 
     
