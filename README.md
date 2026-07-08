@@ -187,6 +187,142 @@ Answer:
 
 # Control Flow in Python:
 
+**If -Else Conditional Statements:**
+
+It directs a computer program to evaluate a specific condition and execute one block of code if the condition is true, or an alternative block of code if it is false.
+
+Think of it like a real-world decision:
+
+- if it is raining, bring an umbrella.
+- else (otherwise), wear sunglasses.
+
+
+Based on this, the conditional statements are further classified into following types
+
+- if
+- else
+- if--else--elif
+- nested if--else--elif
+
+*An if - else statement evaluvates like this:*
+
+**If the expression evaluvates true:**
+Execute the block of code inside if statement. AFter execution return to the code out of the if - else block.
+
+**if the expression evaluvates False:**
+Executes the block of code inside else statement. After execution return to the code out of h=the if - else block.
+
+For example:
+
+        a = int(input("Enter your age: "))
+        print("Your age is:", a)
+
+        # Conditional operators ---> These are the operator used by if statements to check the conditions
+        # <, >, >=, <=, ==< !=
+        #print(a > 18)
+        # print(a <= 18)
+        # print(a == 18)
+        # print(a != 18)
+
+        if(a > 18):
+            print("You can drive")
+        else: 
+            print("You can't drive")
+
+Output:
+
+    Enter your age: 20
+    Your aae is: 20
+
+    False
+    True
+    True
+    False
+
+    You can drive
+
+    Enter your age: 18
+    your age is: 18
+
+    False
+    True
+    True
+    False
+
+**elif - Statement:**
+
+Sometimes, the programmer may want to evaluvate more than one condition, this can be done using an elif statement.
+
+**Working of an elif statement:**
+
+Execute the block of code inside if statement if the initial expression evaluvates to True. After execution return to the code out of the if block.
+
+Execute the block of code inside the first elif statement if the expression inside it evaluvates True. After execution return to the code out of the if block.
+
+Execute the block of code inside the second elif statement if the statement expression inside it evaluvates True. After execution return to the code out of the block.
+
+Execute the block of code inside else statement if none of the expression evaluavtes to True. After execution return to the code out of the if block.
+
+Example: 
+
+    num = 0
+    if (num < 0):
+        print("Number is negative: ")
+    elif (num == 0):
+        print("Number is Zero")
+    else: 
+        print("Number is positive.")
+
+Output:
+
+    Number is Zero.
+
+**Nested if-else-elif statement:**
+
+We can use if, if-else, elif statement inside other if statement as well
+
+num = 18
+if (num < 0):
+    print("Number is negative")
+elif (num > 0):
+    if (num <= 10):
+        print("Number is between 1-10")
+    elif (num > 10 and num <= 20):
+        print("Number is between 11 - 20")
+    else: 
+        print("Number is greater than 20")
+else: 
+    print("Number is zero")
+
+
+Output:
+
+    Number is between 11-20
+
+# Loops
+sometimes a programmer wants to execute a group of statement a certain number of times. This can be done using loops. 
+Based on this loops are further classified into following types: for loop, while loop, nested loops.
+
+**for loop**
+
+for loop can iterate over a sequence of iterable objects in python. Iterationg over a sequence is nothing but iterating over strings, lists, tuples, sets, and dictionaries.
+
+Example: Iterating overa string:
+
+    name = 'Rizz'
+    for i in name:
+        print(i, end="")
+
+output:
+
+    R,i,z,z
+
+
+
+    
+
+
+
 
 
 
