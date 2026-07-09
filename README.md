@@ -557,7 +557,168 @@ Output:
     1
 
 
-    
+# Functions in python:
+Python functions are reusable block of code used to perform a specific task. They help organize program into smaller sections and execute the same logic whenever needed by calling the function.
+
+**Why use function**
+- Code Reusability
+- Modularity
+- Redability
+- Maintainability
+
+**Defining a function** --> A function can be defined using *def keyword*. Below is the syntax to define a function:
+
+<img width="633" height="297" alt="image" src="https://github.com/user-attachments/assets/48c54ff6-681c-4298-b192-7b0762a78863" />
+
+Example:
+
+    def func():
+        print("Welcome to Python World")
+**Calling a Function:**
+After creating a function, call it by using the name of the functions, followed by paraenthesis containing parameters of that particular function.
+
+Example: 
+
+    def func():
+        print("Welcome to Python World")
+
+    func()
+
+Output:
+
+    Wecome to Python World
+
+**Function Argumnents:**
+Arguments are values passed to a function when it is called. They allow functions to recive and perform operations suing those values.
+
+*Syntax:*
+
+    def function_name(arguments):
+        # function body
+        return value
+
+- def function_name(arguments): Defines a function with optional arguments.
+- #function body contains the statement to be executed.
+- return value returns a result from the function. If no return statement is used, it returns None by default
+
+ Example:
+
+     def evenOdd(n):
+         if(n % 2 == 0):
+             return "Even"
+        else:
+            return "Odd"
+    print(evenOdd(16))
+    print(evenOdd(23))
+
+Output:
+
+    Even
+    Odd
+
+**Types of Function Arguments:**
+
+1. Default Argument: Default argument use a predefined value when no value is passed during the function call.
+
+Example:
+
+    def func(x, y=50):
+        print("x: ", x)
+        print("y: ", y)
+    func(10)
+
+Output:
+
+    x: 10
+    y: 50
+
+Here, 
+- y = 50 sets a default value for parameter y and func(10) passes only one argument.
+- Since y is not provided, it uses the default value 50.
+
+2. Keyword Argument: pass values using paramenters names, so argument order does not matter.
+   
+Example:
+
+    def stud(iname, jname):
+        print(fname, lname)
+
+    stud(iname='Rizz', jname='Haru')
+    stud(iname='Aisha', jname='Anzu')
+
+Output:
+    Rizz Haru
+    Asiha Anzu
+
+Here, iname and jname are passed using paramenter names and arguments can be provided in any order.
+
+3. Positional Arguments: Values area sssigned to parameters based on their order in function call.
+
+Example: 
+
+    def nameAge(name, age):
+        print("hi, my name is: ", name)
+        print("and my age is: ", age)
+
+    print("Case_1:")
+    nameAge("Rizz", 21)
+
+    print("Case_2:")
+    nameAge(21, "Rizz")
+
+Output:
+
+    Case_1:
+    hi, my name is: Rizz
+    and my age is: 21
+    Case_2:
+    hi, my name is: 21
+    and my age is: Rizz
+
+Here, 
+
+- In case_1, values matches the correct parameters.
+- In Case_2, values are swapped because the order changed.
+
+**Functions within Functions:**
+A function defined inside another function is called an *inner function*(or nested function). It is used to organize related logic and access variables from the other function.
+
+Example:
+
+    def func1():
+        s = 'I love Python'
+        def func2():
+            print(s)
+
+        func2()
+    func1()
+
+Output:
+
+    I love Python
+
+**Return Statement:**
+*Return* is used to end a function and send a value back to the caller. It can return any datatype, multiple values(packed into a tuple), or None if no value is given.
+
+Parameters: Expression is the value returned by the function. If no value is returned, it returns None by default.
+
+Example: 
+
+    def sq_value(num):
+        return num**2
+
+    print(sq_value(2))
+    print(sq_value(-4))
+
+Output:
+
+    4
+    16
+
+
+
+        
+
 
 
         
