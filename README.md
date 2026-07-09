@@ -311,15 +311,80 @@ Example: Iterating overa string:
 
     name = 'Rizz'
     for i in name:
-        print(i, end="")
+        print(i, end=", ")
 
 output:
 
     R,i,z,z
 
 
+*Example: iterating over a list:*
 
-    
+    colors = ['Red', 'Green', 'Blue', 'Yellow']
+    for color in colors:
+        print(color, end", ")
+
+Output:
+
+    Red, Green, Blue, yellow
+
+
+*Example_2*
+
+    colors = ["Red", "Green", "Blue", "Yellow"]
+    for color in colors:
+        print(color)
+
+    for i in color:
+        print(i)
+
+Output:
+
+    Red
+    R
+    e
+    d
+    Green
+    G
+    r
+    e
+    e
+    n
+    Blue
+    B
+    l
+    u
+    e
+    Yellow
+    Y
+    e
+    l
+    l
+    o
+    w
+
+Similarly, we acn use loops for lists, sets and dictionaries.
+
+**range():**
+what if we do not want to iterate over a sequence ?
+what if we want to use loo for a specific number of times?
+
+Here, we can use the range() function.
+
+Example:
+
+    for i in range(5):
+        print(i)
+
+Output:
+
+    0
+    1
+    2
+    3
+    4
+    5
+
 
 
 
