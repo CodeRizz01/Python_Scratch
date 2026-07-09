@@ -383,9 +383,184 @@ Output:
     2
     3
     4
+    
+
+
+Example_2:
+
+    for j in range(1, 5)
+        print(j)
+
+Output:
+
+    1
+    2
+    3
+    4
+Here, In this example it will print the range of number *1 to 4*, it will not print *5* as *5* is the exclusive number. that it is not included.
+
+So if you want to print then the range should be *1,6* so it will print the number from *1 to 5*
+
+Example_3:
+
+    for k in range(1, 1, 10)
+        print(k)
+
+Output:
+
+    1
+    3
     5
+    7
+    9
+
+Here, In this case it will print leaving one number after another, which is known as *step value*.
+
+**While Loop:**
+
+While loop is used to execute a block of statement repeatdly until a given condition is satisfied. When the condition becomes false, the line immediatly after the loop in the program is executed.
+
+Here, the condition for while will be True as long as the counter variable(count) is less than 3.
+
+Example:
+
+        count = 0
+        while count < 3:
+            count = count + 1
+            print("Hello World")
+Output:
+
+    Hello World
+    Hello World
+    Hello World
+
+**Parameters:**
+- **condition** --> A boolean expression. If it evaluvates to True, code inside the loop will execute.
+- **statement(s)** --> that will be executed during each iteration of the loop.
+
+**Infinite While Loop**
+An infinite loop is a loop that keeps running continuously because it's condition always remains True. Such loops do not stop on their own and continue executing until the program is manually terminated.
+
+Example:
+
+    age = 18
+    while age > 18:
+        print("Infinite Loop")
+Output:
+
+    Infinite Loop
+    Infinite Loop
+    .
+    .
+    .
+
+here, teh condition *age > 18*, is True because the value of age never chnages inside the loop. Therefore the loop runs infinitely.
+
+**Using with continue statement:**
+Continue statement is used to skip the current iteration of the loop and move directly to the next iteration.
+
+Example:
+
+    i = 0
+    a = 'Hello World'
+
+    while i < len(a):
+        if a[i] == 'e' or a[i] == 'l':
+            i = i + 1
+            continue
+        print(a[i])
+        i = i + 1
+
+Output:
+
+    H
+    l
+    l
+    o
+
+    W
+    o
+    r
+    d
+
+Here, whenever the character is 'e' or 'l', the loop skips printing it continue with the next character.
+
+**Using with break statement:**
+
+*Break statement* is used to immediately terminate teh loop when a specific condition becomes True.
+
+Example: 
+
+    i = 0
+    a = 'Hello World'
+
+    while i < len(a):
+        if a[i] == 'e' or a[i] == 'l':
+            i = i + 1
+            break
+        print(a[i])
+        i = i + 1
+
+Output:
+
+    H
+Here, the loop stops as soon as it encounters the character 'e' or 's'.
+
+**Using with pass statement:**
+
+*pass statement* is a null statment. It does nothing when executed and is mainly used as placeholder for future code.
+
+Example:
+    
+    a = 'Hello World'
+    i = 0
+    while i < len(a):
+        i = i + 1
+        pass
+
+    print('Value of i: ', i)
+
+Output:
+
+    Value of i : 11
+
+Here, the loop runs through all character of the string, but the pass statement performs no action inside the loop body.
+
+**Using with else:**
+esle block a while loop executes only when the loop finishes normally without encountering a break statement. In forst eg, loop completes all iterations, so the else block executes. In second example, loop stops because of break, so the else block is skipped.
+
+Example: 
+
+    i = 0
+    while i < 4:
+        i = i + 1
+        print(i)
+
+    else: 
+        print("No break\n")
+
+    i = 0
+    while i < 4:
+        i = i + 1
+        print(i)
+        break
+    else: 
+        print(no Break)
+Output:
+
+    1
+    2
+    3
+    4
+    No Break
+
+    1
 
 
+    
+
+
+        
 
 
 
