@@ -715,12 +715,51 @@ Output:
     4
     16
 
+Here, 
+- *sq_value(num)* accepts a number as input
+- *num**2* claculates the square of the number
+- return sendes the result back to the caller.
+
+**Pass by Reference and Pass by Value:**
+Variables refer to objects. Function behaviour depends on whether the object is mutable or immutable.
+
+- Mutable objects like lists can be modified inside function.
+- Immutable objects like integers and strings remain unchanged.
 
 
-        
+Example:
 
+    def func(x):
+        x[0] = 20
 
+    b = [10, 20, 30 ,40]
+    func(b)
+    print(b)
 
+    def func2(x):
+        x = 20
+
+    a = 10
+    func(a)
+    print(a)
+
+Output:
+
+    [10, 20, 30, 40]
+    10
+
+Here, 
+- *func(x)* modifies the first elements of the list and lists are mutable, so the original list changes.
+- *func2()* asigns a new value to x. Integers are immutable, so the original value of *a* remains unchanged.
+
+***Note:*** *Python uses pass-by-object-reference, where functions recieve to objects instead of actual copies.*
+
+ 
+**Python Built-in Functions:**
+Some important python Built-in Functions:
+
+- list() --> creates a list in python
+- len() --> Returns the length of the 
         
 
 
